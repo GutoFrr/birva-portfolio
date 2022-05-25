@@ -11,9 +11,16 @@ export default createGlobalStyle`
       background: #000;
       color: #fff;
     }
+
+    scroll-behavior: smooth;
+  }
+
+  html {
+    -webkit-text-stroke: 0.25px;
   }
 
   body {
     background: ${props => props.theme.colors.background};
+    overflow-x: hidden;
   }
 `

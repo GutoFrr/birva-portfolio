@@ -4,6 +4,9 @@ import Head from 'next/head'
 
 import { Container } from '../styles/pages/Home'
 import Intro from '../components/intro'
+import About from '../components/about'
+import Header from '../components/header'
+import Works from '../components/works'
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +15,10 @@ const Home: React.FC = () => {
         <title>Birva - Create a Portfolio</title>
       </Head>
 
+      <Header />
       <Intro />
+      <About />
+      <Works />
     </Container>
   )
 }

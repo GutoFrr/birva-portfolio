@@ -8,9 +8,6 @@ import birvaLogo from '../../public/assets/intro/birva-logo.png'
 const Intro = () => {
   return (
     <Container>
-      <div className="header">
-        <Header />
-      </div>
       <div className="intro">
         <div className="slides">
           <div className="overlay"></div>

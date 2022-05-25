@@ -29,8 +29,10 @@ const Header: React.FC<HeaderProps> = () => {
           <ul className="menu-items">
             {headerItems.map((item, key) => (
               <li className="menu-item" key={key}>
-                <Icon icon={item.listIcon} className="menu-icon" />
-                <h5 className="item-name">{item.listName}</h5>
+                <a href={'#' + item.listName}>
+                  <Icon icon={item.listIcon} className="menu-icon" />
+                  <h5 className="item-name">{item.listName}</h5>
+                </a>
               </li>
             ))}
           </ul>

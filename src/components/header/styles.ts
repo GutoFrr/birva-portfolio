@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
   .header {
     display: flex;
     flex-direction: row;
@@ -70,6 +74,12 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         cursor: pointer;
+        letter-spacing: 1px;
+
+        a {
+          text-decoration: none;
+          display: flex;
+        }
 
         .menu-icon {
           font-size: 16px;
@@ -83,7 +93,6 @@ const Container = styled.div`
           text-transform: uppercase;
           color: ${props => props.theme.colors.navItem};
           transition: all 0.2s;
-          letter-spacing: 1px;
         }
 
         :hover {
