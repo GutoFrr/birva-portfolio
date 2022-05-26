@@ -7,6 +7,7 @@ import Intro from '../components/intro'
 import About from '../components/about'
 import Header from '../components/header'
 import Works from '../components/works'
+import Testimonials from '../components/testimonials'
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
       <Intro />
       <About />
       <Works />
+      <Testimonials />
     </Container>
   )
 }
