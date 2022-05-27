@@ -8,6 +8,8 @@ import About from '../components/about'
 import Header from '../components/header'
 import Works from '../components/works'
 import Testimonials from '../components/testimonials'
+import Services from '../components/services'
+import Companies from '../components/companies'
 
 const Home: React.FC = () => {
   return (
@@ -21,6 +23,8 @@ const Home: React.FC = () => {
       <About />
       <Works />
       <Testimonials />
+      <Services />
+      <Companies />
     </Container>
   )
 }

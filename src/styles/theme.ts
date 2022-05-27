@@ -27,6 +27,8 @@ const theme = {
     exampleBackground: '#222222',
     exampleHover: 'rgba(0, 0, 0, 0.8)',
     serviceCard: 'rgba(0,0,0,0.06)',
+    serviceCardBackground: '#fff',
+    serviceCardShadow: '#2c3e50',
     testimonialText: '#fff',
     testimonialEmployee: '#eee',
     testimonialRole: 'rgba(255,255,255,0.60)',
