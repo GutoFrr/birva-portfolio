@@ -10,6 +10,7 @@ import Works from '../components/works'
 import Testimonials from '../components/testimonials'
 import Services from '../components/services'
 import Companies from '../components/companies'
+import Team from '../components/team'
 
 const Home: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
       <Testimonials />
       <Services />
       <Companies />
+      <Team />
     </Container>
   )
 }
