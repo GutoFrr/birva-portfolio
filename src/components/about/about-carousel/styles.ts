@@ -9,6 +9,7 @@ const Container = styled.div`
     align-items: center;
     border-top: 1px solid ${props => props.theme.colors.aboutCardHr};
     border-bottom: 1px solid ${props => props.theme.colors.aboutCardHr};
+    position: relative;
   }
 
   .about-video {
@@ -60,6 +61,58 @@ const Container = styled.div`
         color: ${props => props.theme.colors.text};
       }
     }
+  }
+
+  .icon-container {
+    transition: all 0.3s;
+
+    :hover {
+      background: ${props => props.theme.colors.aboutCarouselIcon};
+
+      .icon {
+        color: ${props => props.theme.colors.aboutCarouselHoverIcon};
+      }
+    }
+  }
+
+  .icon {
+    transition: all 0.3s;
+  }
+
+  .right-icon-container {
+    width: 53px;
+    height: 50px;
+    background: ${props => props.theme.colors.aboutCarouselButton};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 165px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .right-icon {
+    font-size: 20px;
+    color: ${props => props.theme.colors.aboutCarouselIcon};
+  }
+
+  .left-icon-container {
+    width: 50px;
+    height: 53px;
+    background: ${props => props.theme.colors.aboutCarouselButton};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 165px;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .left-icon {
+    font-size: 20px;
+    color: ${props => props.theme.colors.aboutCarouselIcon};
   }
 `
 

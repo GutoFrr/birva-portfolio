@@ -1,22 +1,15 @@
 import React from 'react'
-import Header from '../header'
 import Container from './styles'
+import { Icon } from '@iconify/react'
 
-import smileGuy from '../../public/assets/intro/03-bgsliderimg.jpg'
 import birvaLogo from '../../public/assets/intro/birva-logo.png'
 
 const Intro = () => {
   return (
-    <Container>
+    <Container id="">
       <div className="intro">
-        <div className="slides">
-          <div className="overlay"></div>
-          <img
-            src={smileGuy}
-            alt="Homem Sorrindo Intro"
-            className="smile-guy"
-          />
-        </div>
+        <div className="overlay"></div>
+        <div className="slides"></div>
         <div className="intro-content">
           <img
             src={birvaLogo}
@@ -31,6 +24,16 @@ const Intro = () => {
           </h2>
           <hr />
           <button>Know More</button>
+        </div>
+        <div className="intro-arrows">
+          <Icon
+            icon="fluent:triangle-left-12-regular"
+            className="left-icon icon"
+          />
+          <Icon
+            icon="fluent:triangle-right-12-regular"
+            className="right-icon icon"
+          />
         </div>
       </div>
     </Container>

@@ -11,6 +11,9 @@ import Testimonials from '../components/testimonials'
 import Services from '../components/services'
 import Companies from '../components/companies'
 import Team from '../components/team'
+import Contact from '../components/contact'
+import Footer from '../components/footer'
+import Map from '../components/map'
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +30,9 @@ const Home: React.FC = () => {
       <Services />
       <Companies />
       <Team />
+      <Contact />
+      <Footer />
+      <Map />
     </Container>
   )
 }

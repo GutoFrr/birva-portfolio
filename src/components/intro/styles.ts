@@ -1,26 +1,27 @@
 import styled from 'styled-components'
+import smileGuy from '../../public/assets/intro/03-bgsliderimg.jpg'
 
 const Container = styled.div`
-  position: relative;
-
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 3;
+  .intro {
+    position: relative;
+    width: 100vw;
+    height: 929px;
   }
 
   .overlay {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 929px;
     position: absolute;
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .smile-guy {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+  .slides {
+    width: 100vw;
+    height: 929px;
     margin-top: -120px;
+    background: url(${smileGuy});
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .intro-content {
@@ -76,6 +77,29 @@ const Container = styled.div`
         background: ${props => props.theme.colors.introText};
       }
     }
+  }
+
+  .icon {
+    font-size: 48px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s;
+
+    :hover {
+      opacity: 1;
+    }
+  }
+
+  .left-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  .right-icon {
+    position: absolute;
+    right: 1%;
+    top: 50%;
   }
 `
 

@@ -8,6 +8,7 @@ const Container = styled.div`
     align-items: center;
     height: 1200px;
     padding-top: 60px;
+    margin-bottom: 220px;
   }
 
   .team-title {
@@ -33,7 +34,7 @@ const Container = styled.div`
       font: 300 30px 'Lato', sans-serif;
       text-rendering: optimizeLegibility;
       padding: 8.2px 0;
-      line-height: 18.48608px;
+      line-height: 36px;
       width: 760px;
       text-align: center;
     }

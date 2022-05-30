@@ -30,32 +30,28 @@ const Container = styled.div`
     cursor: pointer;
 
     .overlay {
-      display: none;
+      opacity: 0;
       transition: all 0.3s;
     }
 
     .project-content {
       z-index: 2;
-      transition: all 0.3s;
 
       .content {
-        display: none;
         z-index: 10;
-        opacity: 1;
+        opacity: 0;
         transition: all 0.3s;
 
         h5 {
           font: 400 18px 'Lato', sans-serif;
           color: #fff;
           padding: 5px 0;
-          transition: all 0.3s;
         }
 
         h6 {
           font: 200 14px 'Lato', sans-serif;
           color: #ddd;
           padding: 5px 0;
-          transition: all 0.3s;
         }
 
         hr {
@@ -78,7 +74,7 @@ const Container = styled.div`
 
     :hover {
       .overlay {
-        display: block;
+        opacity: 1;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -91,6 +87,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        opacity: 1;
       }
     }
   }

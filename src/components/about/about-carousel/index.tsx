@@ -1,15 +1,15 @@
 import React from 'react'
-import cardData from '../about-cards/aboutCardData'
 import Container from './styles'
+import { Icon } from '@iconify/react'
 
-import justiceLeague from '../../../public/assets/about/VDFcAmUqXC4vKRhXdNoPx6.jpg'
+import officeIcons from '../../../public/assets/about/office.jpg'
 
 const AboutCarousel = () => {
   return (
     <Container>
       <div className="about-carousel">
         <div className="about-video">
-          <img src={justiceLeague} alt="Video Carrossel About" />
+          <img src={officeIcons} alt="Video Carrossel About" />
         </div>
         <div className="carousel-text">
           <div className="text">
@@ -29,6 +29,12 @@ const AboutCarousel = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="left-icon-container icon-container">
+          <Icon icon="entypo:arrow-long-left" className="left-icon icon" />
+        </div>
+        <div className="right-icon-container icon-container">
+          <Icon icon="entypo:arrow-long-right" className="right-icon icon" />
         </div>
       </div>
     </Container>

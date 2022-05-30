@@ -15,9 +15,7 @@ const SlideShow = () => {
             <strong> Maecenas metus</strong> nulla Nam blandit felis non neque
             cursus aliquet. Morbi vel enim dignissim massa dignissim.
           </p>
-          <button>
-            <a href="/">Action Button</a>
-          </button>
+          <button>Action Button</button>
         </div>
         <div className="slideshow-images">
           <img

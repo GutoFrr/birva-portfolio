@@ -5,7 +5,7 @@ import TeamMembers from './team-members'
 
 const Team = () => {
   return (
-    <Container>
+    <Container id="Team">
       <div className="team">
         <div className="team-title">
           <hr />

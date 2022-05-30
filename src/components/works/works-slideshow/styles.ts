@@ -7,8 +7,9 @@ const Container = styled.div`
     width: 100%;
     height: 500px;
     background: ${props => props.theme.colors.slideshowBackground};
-    position: relative;
     overflow: hidden;
+    perspective: 1600px;
+    position: relative;
   }
 
   .slideshow-title {
@@ -56,12 +57,13 @@ const Container = styled.div`
 
   .slideshow-images {
     position: absolute;
-    left: 50%;
     width: 50%;
     top: 50%;
+    left: 55%;
+    transform: translateY(-50%) rotateX(60deg) rotateZ(35deg);
     transform-style: preserve-3d;
-    transform: translateY(-45%) rotateX(65deg) rotateZ(30deg);
   }
+
   .img-1 {
     margin-bottom: 30px;
   }
