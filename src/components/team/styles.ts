@@ -33,18 +33,19 @@ const Container = styled.div`
       text-transform: uppercase;
       font: 300 30px 'Lato', sans-serif;
       text-rendering: optimizeLegibility;
-      padding: 8.2px 0;
-      line-height: 36px;
-      width: 760px;
+      padding: 4.368px 0;
+      line-height: 18.48608px;
+      width: 80vw;
+      max-width: 780px;
       text-align: center;
     }
 
     p {
       font: 400 16px 'Lato', sans-serif;
       color: ${props => props.theme.colors.text};
-      margin-bottom: 13px;
       line-height: 1.625em;
-      width: 780px;
+      max-width: 780px;
+      width: 80vw;
     }
   }
 
@@ -70,18 +71,19 @@ const Container = styled.div`
       text-transform: uppercase;
       font: 300 30px 'Lato', sans-serif;
       text-rendering: optimizeLegibility;
-      padding: 8.2px 0;
+      padding: 4.368px 0;
       line-height: 18.48608px;
-      width: 780px;
+      width: 80vw;
+      max-width: 780px;
       text-align: center;
     }
 
     p {
       font: 400 16px 'Lato', sans-serif;
       color: ${props => props.theme.colors.text};
-      margin-bottom: 13px;
       line-height: 1.625em;
-      width: 780px;
+      max-width: 780px;
+      width: 80vw;
     }
   }
 
@@ -111,6 +113,19 @@ const Container = styled.div`
       left: 30%;
       font: 400 18px 'Lato', sans-serif;
       color: ${props => props.theme.colors.aboutCard};
+    }
+  }
+
+  @media (max-width: 800px) {
+    .team-title {
+      h2 {
+        line-height: 1;
+      }
+    }
+    .team-graphs {
+      h2 {
+        line-height: 1;
+      }
     }
   }
 `

@@ -74,7 +74,6 @@ const Container = styled.div`
       justify-content: space-between;
       align-items: center;
       row-gap: 10px;
-      padding: 40px 0;
     }
   }
 `

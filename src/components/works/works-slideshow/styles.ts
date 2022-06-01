@@ -13,8 +13,10 @@ const Container = styled.div`
   }
 
   .slideshow-title {
-    width: 50%;
     padding: 48px 96px;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
 
     h2 {
       font: 300 48px 'Lato', sans-serif;
@@ -27,7 +29,7 @@ const Container = styled.div`
       font: 400 16px 'Lato', sans-serif;
       color: ${props => props.theme.colors.text};
       line-height: 26px;
-      width: 583px;
+      max-width: 583px;
       margin-bottom: 13px;
     }
 
@@ -57,11 +59,15 @@ const Container = styled.div`
 
   .slideshow-images {
     position: absolute;
-    width: 50%;
+    z-index: 1;
     top: 50%;
     left: 55%;
     transform: translateY(-50%) rotateX(60deg) rotateZ(35deg);
     transform-style: preserve-3d;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .img-1 {
@@ -107,6 +113,36 @@ const Container = styled.div`
         hr {
           border: 2px solid ${props => props.theme.colors.carouselHrHover};
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .slideshow-images {
+      left: 0;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .slideshow-title {
+    }
+
+    .slideshow-images {
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .carousel-slides {
+      hr {
+        margin: 0 3px;
+        height: 20px;
+        width: 20px;
+        transition: all 0.3s;
       }
     }
   }

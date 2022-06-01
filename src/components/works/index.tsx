@@ -23,7 +23,7 @@ const Works = () => {
           </p>
         </div>
         <SlideShow />
-        <div className="works-projects">
+        <div className="works-projects-title">
           <h2>
             Selection of some <strong>Projects</strong> we worked on.
           </h2>
@@ -37,9 +37,7 @@ const Works = () => {
             commodo vitae quis tellus.
           </p>
         </div>
-        <div className="projects">
-          <Projects />
-        </div>
+        <Projects />
       </div>
     </Container>
   )

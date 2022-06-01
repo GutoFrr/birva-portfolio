@@ -8,8 +8,7 @@ const Projects = () => {
       <div className="works-projects">
         {projectsData.map((item, key) => (
           <div className="project" key={key}>
-            <div className="overlay"></div>
-            <div className="image"></div>
+            <img src={item.image} alt="Imagem Projeto" className="image" />
             <div className="project-content">
               <div className="content">
                 <h5>{item.title}</h5>

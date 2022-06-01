@@ -32,6 +32,7 @@ const Container = styled.div`
     width: 100vw;
     position: absolute;
     top: 340px;
+    text-align: center;
 
     h1 {
       color: ${props => props.theme.colors.introText};

@@ -17,7 +17,8 @@ const Container = styled.div`
     width: 50%;
 
     img {
-      height: 380px;
+      height: auto;
+      max-height: 380px;
       width: 100%;
     }
   }
@@ -113,6 +114,36 @@ const Container = styled.div`
   .left-icon {
     font-size: 20px;
     color: ${props => props.theme.colors.aboutCarouselIcon};
+  }
+
+  @media (max-width: 800px) {
+    .about-carousel {
+      flex-direction: column;
+    }
+
+    .about-video {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-text {
+      width: 100%;
+      height: auto;
+    }
+
+    .text {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 `
 

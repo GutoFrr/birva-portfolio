@@ -14,7 +14,6 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 230px;
     max-width: 980px;
     min-width: 320px;
     padding-left: 20px;
@@ -48,7 +47,14 @@ const Container = styled.div`
       line-height: 1.625em;
       max-width: 780px;
       width: 80vw;
-      margin-bottom: 13px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .about {
+      h2 {
+        line-height: 1;
+      }
     }
   }
 `
