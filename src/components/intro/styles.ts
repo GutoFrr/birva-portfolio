@@ -38,11 +38,12 @@ const Container = styled.div`
       font: 300 62px 'Lato', sans-serif;
       text-align: center;
       text-transform: uppercase;
+      text-rendering: optimizeLegibility;
     }
 
     h2 {
       color: ${props => props.theme.colors.introText};
-      font: 100 26px 'Lato', sans-serif;
+      font: 300 26px 'Lato', sans-serif;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -98,8 +99,48 @@ const Container = styled.div`
 
   .right-icon {
     position: absolute;
-    right: 1%;
+    right: 18px;
     top: 50%;
+  }
+
+  @media screen and (max-width: 980px) {
+    .intro-content {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .intro-content {
+      h1 {
+        font-size: 32px;
+        max-width: 70vw;
+      }
+
+      h2 {
+        font-size: 18px;
+        padding: 5px 20px;
+        max-width: 70vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .intro-content {
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 16px;
+        padding: 5px 15px;
+      }
+
+      hr {
+        width: 10%;
+      }
+    }
   }
 `
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  height: 298px;
   width: 100%;
   max-width: 980px;
   min-width: 320px;
@@ -11,6 +10,8 @@ const Container = styled.div`
   .cards {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
   }
 
@@ -63,6 +64,17 @@ const Container = styled.div`
         color: ${props => props.theme.colors.aboutCardActive};
         top: 30%;
       }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 10px;
+      padding: 40px 0;
     }
   }
 `

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   .about {
-    height: 968.75px;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
@@ -38,16 +37,18 @@ const Container = styled.div`
       text-rendering: optimizeLegibility;
       padding: 4.368px 0;
       line-height: 18.48608px;
-      width: 780px;
+      width: 80vw;
+      max-width: 780px;
       text-align: center;
     }
 
     p {
       font: 400 16px 'Lato', sans-serif;
       color: ${props => props.theme.colors.text};
-      margin-bottom: 13px;
       line-height: 1.625em;
-      width: 780px;
+      max-width: 780px;
+      width: 80vw;
+      margin-bottom: 13px;
     }
   }
 `

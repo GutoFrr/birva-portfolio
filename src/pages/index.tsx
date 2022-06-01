@@ -14,6 +14,7 @@ import Team from '../components/team'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Map from '../components/map'
+import MobileHeader from '../components/mobile-header'
 
 const Home: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
       </Head>
 
       <Header />
+      <MobileHeader />
       <Intro />
       <About />
       <Works />

@@ -3,14 +3,14 @@ import styled from 'styled-components'
 const Container = styled.div`
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 40;
 
   .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     height: 120px;
+    column-gap: 5vw;
     padding: 0 25vw;
     background: ${props => props.theme.colors.navBackground};
   }
@@ -29,6 +29,7 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
         width: 33%;
+        min-width: 70px;
         max-width: 100px;
         height: 120px;
         padding: 10px 0;
@@ -38,7 +39,7 @@ const Container = styled.div`
 
         .socials-icon {
           line-height: 1;
-          font-size: 1.1rem;
+          font-size: 16px;
           color: ${props => props.theme.colors.background};
         }
       }
@@ -63,12 +64,12 @@ const Container = styled.div`
 
   .menu {
     .menu-items {
-      width: 579px;
       height: 120px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style: none;
+      column-gap: 1vw;
 
       .menu-item {
         display: flex;
@@ -106,6 +107,30 @@ const Container = styled.div`
         }
       }
     }
+  }
+
+  @media screen and (max-width: 1140px) {
+    .header {
+      column-gap: 10%;
+    }
+
+    .menu {
+      .menu-items {
+        .menu-item {
+          .menu-icon {
+            font-size: 15px;
+          }
+
+          .item-name {
+            font: 500 13px 'Lato', sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 `
 
