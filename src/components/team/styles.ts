@@ -114,6 +114,18 @@ const Container = styled.div`
     }
   }
 
+  .graph:nth-child(2) {
+    h4 {
+      left: 40%;
+    }
+  }
+
+  .graph:nth-child(3) {
+    h4 {
+      left: 38%;
+    }
+  }
+
   @media (max-width: 800px) {
     .team-title {
       h2 {
