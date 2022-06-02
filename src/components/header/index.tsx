@@ -21,7 +21,9 @@ const Header: React.FC<HeaderProps> = () => {
     }
   }
 
-  window.addEventListener('scroll', changeHeader)
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', changeHeader)
+  }
 
   return (
     <Container>
