@@ -17,7 +17,7 @@ const Container = styled.div`
     width: 50%;
 
     img {
-      height: auto;
+      height: 380px;
       max-height: 380px;
       width: 100%;
     }
@@ -124,6 +124,10 @@ const Container = styled.div`
     .about-video {
       width: 100%;
       height: auto;
+
+      img {
+        height: auto;
+      }
     }
 
     .carousel-text {
@@ -143,6 +147,14 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
       }
+    }
+
+    .right-icon-container {
+      top: 20%;
+    }
+
+    .left-icon-container {
+      top: 20%;
     }
   }
 `

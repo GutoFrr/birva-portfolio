@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
+  width: 100%;
+
   .members {
-    width: 100vw;
+    width: auto;
     height: 380px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   .member {
@@ -13,19 +17,26 @@ const Container = styled.div`
     border-bottom: 1px solid ${props => props.theme.colors.aboutCardHr};
     height: 380px;
     position: relative;
+    width: 100%;
   }
 
   .member-image {
-    width: 705px;
-    height: max-content;
+    display: flex;
+    align-items: center;
+    height: 380px;
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .member-data {
+    height: 380px;
+    width: 65%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto;
+    align-items: center;
   }
 
   .member-description {
@@ -61,7 +72,6 @@ const Container = styled.div`
     ul {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       align-items: center;
       list-style: none;
       column-gap: 1px;
@@ -145,6 +155,61 @@ const Container = styled.div`
   .left-icon {
     font-size: 20px;
     color: ${props => props.theme.colors.aboutCarouselIcon};
+  }
+
+  @media screen and (max-width: 800px) {
+    .members {
+      height: auto;
+    }
+
+    .member {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+
+    .member-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .member-data {
+      height: auto;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .member-description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h4 {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p {
+        width: 80vw;
+      }
+    }
+
+    .right-icon-container {
+      top: 20%;
+    }
+
+    .left-icon-container {
+      top: 20%;
+    }
   }
 `
 
