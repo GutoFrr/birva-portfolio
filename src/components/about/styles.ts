@@ -15,7 +15,6 @@ const Container = styled.div`
     align-items: center;
     width: 100%;
     max-width: 980px;
-    min-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     color: ${props => props.theme.colors.text};
@@ -54,6 +53,14 @@ const Container = styled.div`
     .about {
       h2 {
         line-height: 1;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .about {
+      h2 {
+        font-size: 7vw;
       }
     }
   }

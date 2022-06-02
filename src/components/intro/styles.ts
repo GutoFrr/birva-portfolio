@@ -4,7 +4,6 @@ import smileGuy from '../../public/assets/intro/03-bgsliderimg.jpg'
 const Container = styled.div`
   .intro {
     position: relative;
-    width: 100vw;
     height: 929px;
   }
 
@@ -100,7 +99,7 @@ const Container = styled.div`
 
   .right-icon {
     position: absolute;
-    right: 18px;
+    right: 0;
     top: 50%;
   }
 

@@ -2,12 +2,14 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   .footer {
+    width: 100%;
     height: 103px;
     background: ${props => props.theme.colors.footerBackground};
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 100px;
+    row-gap: 30px;
   }
 
   .socials {
@@ -18,8 +20,9 @@ const Container = styled.div`
   }
 
   .social-item {
+    width: 33vw;
+    max-width: 90px;
     height: 103px;
-    width: 90px;
     background: ${props => props.theme.colors.footerSocialsBackground};
     display: flex;
     justify-content: center;
@@ -69,7 +72,14 @@ const Container = styled.div`
     }
 
     .info-icon {
-      line-height: 26px;
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .footer {
+      height: auto;
+      flex-direction: column;
     }
   }
 `

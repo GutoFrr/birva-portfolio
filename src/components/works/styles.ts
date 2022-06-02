@@ -103,9 +103,22 @@ const Container = styled.div`
       }
     }
 
-    .works-projects {
+    .works-projects-title {
       h2 {
         line-height: 1;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .works-title {
+      h2 {
+        font-size: 7vw;
+      }
+    }
+    .works-projects-title {
+      h2 {
+        font-size: 7vw;
       }
     }
   }

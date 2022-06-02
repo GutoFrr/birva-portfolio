@@ -5,17 +5,17 @@ const Container = styled.div`
     position: relative;
     text-align: right;
     height: 300px;
-    width: 100vw;
+    width: 100%;
   }
 
   .gmap_canvas {
     overflow: hidden;
     height: 300px;
-    width: 100vw;
+    width: 100%;
   }
 
   .close-map {
-    width: 100vw;
+    width: 100%;
     height: 42px;
     background: ${props => props.theme.colors.footerBackground};
     display: flex;

@@ -32,6 +32,15 @@ const TeamMembers = () => {
                 </ul>
               </div>
             </div>
+            <div className="left-icon-container icon-container">
+              <Icon icon="entypo:arrow-long-left" className="left-icon icon" />
+            </div>
+            <div className="right-icon-container icon-container">
+              <Icon
+                icon="entypo:arrow-long-right"
+                className="right-icon icon"
+              />
+            </div>
           </div>
         ))}
       </div>

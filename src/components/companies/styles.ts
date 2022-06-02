@@ -4,7 +4,6 @@ import backgroundImg from '../../public/assets/companies/background.jpg'
 const Container = styled.div`
   .companies {
     height: 306px;
-    width: 100vw;
     background: url(${backgroundImg});
     background-size: cover;
     background-attachment: scroll;
@@ -17,22 +16,19 @@ const Container = styled.div`
 
   .overlay {
     height: 306px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
   }
 
   .companies-content {
-    width: 940px;
+    max-width: 940px;
     overflow: hidden;
   }
 
   .companies-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
   }
 
@@ -64,6 +60,23 @@ const Container = styled.div`
       :hover {
         background: ${props => props.theme.colors.companyDotActive};
       }
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+    .companies-content {
+      width: 90vw;
+    }
+
+    .brand {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .brand {
+      width: 80vw;
     }
   }
 `

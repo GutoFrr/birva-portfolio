@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   .services {
-    height: 900px;
     padding: 60px 0 100px 0;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,6 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 230px;
     max-width: 980px;
     min-width: 320px;
     margin: 0 auto;
@@ -57,6 +55,14 @@ const Container = styled.div`
     .services-title {
       h2 {
         line-height: 1;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .services-title {
+      h2 {
+        font-size: 7vw;
       }
     }
   }

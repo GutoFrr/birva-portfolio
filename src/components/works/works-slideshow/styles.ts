@@ -126,7 +126,13 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 800px) {
+    .slideshow {
+      height: auto;
+    }
+
     .slideshow-title {
+      padding: 2vw 4vw;
+      text-align: center;
     }
 
     .slideshow-images {

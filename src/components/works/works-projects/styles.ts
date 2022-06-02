@@ -5,14 +5,13 @@ const Container = styled.div`
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .project {
     width: 25vw;
-    height: 320px;
+    height: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +69,27 @@ const Container = styled.div`
       .content {
         opacity: 1;
       }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .project {
+      width: 33.3333vw;
+      height: 25vw;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .project {
+      width: 50vw;
+      height: 30vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .project {
+      width: 100vw;
+      height: 70vw;
     }
   }
 `

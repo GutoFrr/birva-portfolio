@@ -2,17 +2,16 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   .services-cards {
-    height: 460px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 1vw;
   }
 
   .service-card {
-    width: 300px;
-    height: 460px;
+    max-width: 300px;
     padding: 20px;
     box-shadow: inset 0 0 0 3px ${props => props.theme.colors.serviceCardShadow};
     color: ${props => props.theme.colors.serviceCardShadow};
@@ -49,6 +48,22 @@ const Container = styled.div`
 
     :hover {
       background: rgba(100, 100, 100, 0.1);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .services-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 0 1vw;
+    }
+
+    .service-card {
+      max-width: 90vw;
+      padding: 20px;
     }
   }
 `

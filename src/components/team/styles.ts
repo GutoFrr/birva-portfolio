@@ -4,11 +4,9 @@ const Container = styled.div`
   .team {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 1200px;
     padding-top: 60px;
-    margin-bottom: 220px;
   }
 
   .team-title {
@@ -16,9 +14,8 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 265px;
     max-width: 980px;
-    min-width: 320px;
+    margin-bottom: 60px;
 
     hr {
       border: 2px solid ${props => props.theme.colors.introHr};
@@ -54,9 +51,8 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 186px;
     max-width: 980px;
-    min-width: 320px;
+    margin-top: 60px;
 
     hr {
       border: 2px solid ${props => props.theme.colors.introHr};
@@ -84,6 +80,7 @@ const Container = styled.div`
       line-height: 1.625em;
       max-width: 780px;
       width: 80vw;
+      margin-bottom: 13px;
     }
   }
 
@@ -92,6 +89,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 40px;
   }
 
@@ -125,6 +123,19 @@ const Container = styled.div`
     .team-graphs {
       h2 {
         line-height: 1;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .team-title {
+      h2 {
+        font-size: 7vw;
+      }
+    }
+    .team-graphs {
+      h2 {
+        font-size: 7vw;
       }
     }
   }

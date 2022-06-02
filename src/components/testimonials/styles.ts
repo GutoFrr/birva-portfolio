@@ -19,6 +19,7 @@ const Container = styled.div`
       color: ${props => props.theme.colors.testimonialText};
       margin-bottom: 13px;
       font-style: italic;
+      max-width: 85vw;
     }
 
     .employee {
@@ -64,6 +65,22 @@ const Container = styled.div`
 
       :hover {
         background: ${props => props.theme.colors.companyDotActive};
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .testimonial-content {
+      .testimonial {
+        font-size: 18px;
+      }
+
+      .employee {
+        h5 {
+          :first-child {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

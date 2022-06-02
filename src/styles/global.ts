@@ -22,7 +22,5 @@ export default createGlobalStyle`
   body {
     background: ${props => props.theme.colors.background};
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
   }
 `
