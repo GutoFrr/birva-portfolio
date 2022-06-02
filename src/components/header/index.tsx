@@ -1,7 +1,9 @@
-import React from 'react'
-import { headerIcons, headerItems } from './headerData'
+import React, { useState } from 'react'
 import Container from './styles'
+import { headerIcons, headerItems } from './headerData'
 import { Icon } from '@iconify/react'
+
+import smallLogo from '../../public/assets/header/small-logo.png'
 
 interface HeaderProps {
   listIcon?: string
@@ -9,9 +11,21 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = () => {
+  const [header, setHeader] = useState(false)
+
+  const changeHeader = () => {
+    if (window.scrollY >= 220) {
+      setHeader(true)
+    } else {
+      setHeader(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeHeader)
+
   return (
     <Container>
-      <div className="header">
+      <div className={header ? 'header active' : 'header'}>
         <div className="socials">
           <ul className="socials-list">
             <li className="socials-item">
@@ -24,6 +38,11 @@ const Header: React.FC<HeaderProps> = () => {
               <Icon icon={headerIcons[2]} className="socials-icon" />
             </li>
           </ul>
+        </div>
+        <div className="logo-container">
+          <a href="#">
+            <img src={smallLogo} alt="Logo Header Birva" className="logo" />
+          </a>
         </div>
         <div className="menu">
           <ul className="menu-items">

@@ -5,6 +5,8 @@ const theme = {
     navItem: '#fff',
     navHover: '#777',
     navSocials: 'rgba(0, 0, 0, 0.2)',
+    whiteNavItem: '#999',
+    whiteNavItemHover: '#000',
     mobileMenuBackground: '#fff',
     mobileListBackground: '#222',
     mobileListText: '#fff',

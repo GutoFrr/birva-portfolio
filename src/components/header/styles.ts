@@ -13,6 +13,55 @@ const Container = styled.div`
     column-gap: 5vw;
     padding: 0 25vw;
     background: ${props => props.theme.colors.navBackground};
+    transition: all 0.3s;
+
+    .logo-container {
+      display: none;
+    }
+  }
+
+  .header.active {
+    height: 80px;
+    background: #fff;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+
+    .socials {
+      display: none;
+    }
+
+    .logo-container {
+      display: flex;
+    }
+
+    .menu {
+      .menu-items {
+        height: 80px;
+
+        .menu-item {
+          .menu-icon {
+            color: ${props => props.theme.colors.whiteNavItem};
+            transition: all 0.2s;
+          }
+
+          .item-name {
+            color: ${props => props.theme.colors.whiteNavItem};
+            transition: all 0.2s;
+          }
+
+          :hover {
+            .menu-icon {
+              color: ${props => props.theme.colors.whiteNavItemHover};
+            }
+
+            .item-name {
+              color: ${props => props.theme.colors.whiteNavItemHover};
+            }
+          }
+        }
+      }
+    }
   }
 
   .socials {
