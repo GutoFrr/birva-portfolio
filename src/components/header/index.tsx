@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from './styles'
 import { headerIcons, headerItems } from './headerData'
 import { Icon } from '@iconify/react'
@@ -21,9 +21,9 @@ const Header: React.FC<HeaderProps> = () => {
     }
   }
 
-  if (typeof window !== 'undefined') {
+  useEffect(() => {
     window.addEventListener('scroll', changeHeader)
-  }
+  })
 
   return (
     <Container>
