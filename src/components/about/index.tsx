@@ -10,8 +10,7 @@ const About = () => {
         <div className="about-title">
           <hr />
           <h2>
-            Hello, we`&apos;`re <strong>Birva</strong>, a creative design
-            agency.
+            Hello, we&apos;re <strong>Birva</strong>, a creative design agency.
           </h2>
           <hr />
           <p>
