@@ -23,7 +23,8 @@ const Header: React.FC<HeaderProps> = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', changeHeader)
-  })
+    console.log('scroll')
+  }, [header])
 
   return (
     <Container>
